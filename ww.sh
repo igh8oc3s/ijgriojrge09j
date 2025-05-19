@@ -2,6 +2,9 @@
 
 cd /workspace/
 
+# Cause the script to exit on failure.
+set -eo pipefail
+
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get update && apt-get install -y \
